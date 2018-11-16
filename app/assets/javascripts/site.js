@@ -1,5 +1,5 @@
 //= require rails-ujs
-//= require jquery3
+//= require site/jquery.min
 //= require site/bootstrap3.min
 //= require site/jquery.flexslider
 //= require site/jquery.themepunch.tools.min
