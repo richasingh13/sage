@@ -1,0 +1,402 @@
+ <!-- BANNER -->
+    <div class="bannercontainer bannerV3">
+      <div class="fullscreenbanner-container">
+        <div class="container">
+          <div class="fixed-caption">
+            <h3>Find a Course</h3>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+            <div class="selectBox clearfix">
+              <select name="guiest_id4" id="guiest_id4">
+                <option value="0">Location</option>
+                <option value="1">Location_1</option>
+                <option value="2">Location_2</option>
+                <option value="3">Location_3</option>
+              </select>
+            </div>
+            <div class="selectBox clearfix">
+              <select name="guiest_id5" id="guiest_id5">
+                <option value="0">Level</option>
+                <option value="1">Level_1</option>
+                <option value="2">Level_2</option>
+                <option value="3">Level_3</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-default commonBtn">submit</button>
+          </div>
+        </div>
+
+        <!--<div class="fullscreenbanner">
+          <ul>
+            <li data-transition="fade">
+              <div class="caption fade fullscreenvideo"
+                 data-autoplay="true"
+                 data-nextslideatend="true"
+                 data-x="0"
+                 data-y="0"
+                 data-speed="500"
+                 data-start="10"
+                 data-easing="easeOutBack">
+                <iframe src="http://www.youtube.com/embed/T8--OggjJKQ?enablejsapi=1&html5=1&hd=1&wmode=opaque&controls=1&showinfo=0;rel=0;" width="100%" height="100%"></iframe>
+              </div>
+            </li>
+            <li data-transition="fade">
+              <div class="caption fade fullscreenvideo"
+                data-autoplay="true"
+                data-nextslideatend="true"
+                data-volume="mute"
+                data-x="0"
+                data-y="0"
+                data-speed="500"
+                data-start="10"
+                data-easing="easeOutBack">
+                <iframe src="http://player.vimeo.com/video/29298709?title=0&amp;byline=0&amp;portrait=0;api=1" width="100%" height="100%"></iframe>
+              </div>
+            </li>
+
+          </ul>
+        </div>-->
+
+        <div class="owl-carousel banner-slider">
+          <div class="slide" style="background-image: url('<%= asset_path("slide3-01.jpg")%>');">
+          </div>
+          <div class="slide" style="background-image: url('<%= asset_path("slide3-02.jpg")%>');">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- BANNER BOTTOM-->
+    <div class="bannercontainer-bottom">
+      <div class="fullscreenbanner-container">
+        <div class="container">
+          <div class="owl-carousel bannerBottom-slider">
+            <div class="slide">
+              <div class="slide-info text-center">
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit...</p>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-info text-center">
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit...</p>
+              </div>
+            </div>
+          </div>
+          <i class="fa fa-bullhorn" aria-hidden="true"></i>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+      <div class="container">
+
+        <!--NEWS SECTION -->
+        <div class="news-section padding">
+          <div class="row">
+            <div class="col-sm-8 col-xs-12">
+              <div class="related_post_sec single_post news-content">
+                <div class="sectionTitle title-block">
+                  <h3>What’s happening in royal university?</h3>
+                </div>
+                <a class="more" href="">View All ></a>
+                <div class="row news-box">
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="news-boxInner">
+                      <span class="rel_thumb">
+                        <a href="single-post-right-sidebar.html"><%= image_tag "news-01.jpg", alt: "Image"%></a>
+                      </span><!--end rel_thumb-->
+                      <div class="rel_right">
+                        <h4><a href="single-post-right-sidebar.html">Lorem Ipsum dolar simt Amet simply dummy Text Lorem Ipsum dolar</a></h4>
+                        <div class="meta">
+                          <span class="author">Posted in: <a href="#">Update</a></span>
+                          <span class="date">on: <a href="#">January 24, 2015</a></span>
+                        </div>
+                      </div><!--end rel right-->
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="news-boxInner">
+                      <span class="rel_thumb">
+                        <a href="single-post-right-sidebar.html"><%= image_tag "news-02.jpg", alt: "Image"%></a>
+                      </span><!--end rel_thumb-->
+                      <div class="rel_right">
+                        <h4><a href="single-post-right-sidebar.html">Lorem Ipsum dolar simt Amet simply dummy Text Lorem Ipsum dolar</a></h4>
+                        <div class="meta">
+                          <span class="author">Posted in: <a href="#">Exam</a></span>
+                          <span class="date">on: <a href="#">January 24, 2015</a></span>
+                        </div>
+                      </div><!--end rel right-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 col-xs-12">
+              <div class="upcoming_events event-col">
+                <div class="related_post_sec single_post">
+                  <div class="sectionTitle title-block">
+                    <h3>Upcoming event</h3>
+                  </div>
+                  <a class="more" href="">View All ></a>
+                  <div class="rel_right">
+                    <h4><a href="single-events.html">Lorem Ipsum dolar simt Amet simply dummy Text Lorem Ipsum dolar</a></h4>
+                    <div class="meta">
+                      <span class="place"><i class="fa fa-map-marker"></i>Main Campus</span>
+                      <span class="event-time"><i class="fa fa-clock-o"></i>11.00 pm</span>
+                      <span class="publish-date">Start Date Is : <a href="#">January 24, 2017</a></span>
+                    </div>
+                     <div id="event_timer"></div>
+                    <a href="single-events.html" class="btn btn-default commonBtn">Join now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- LIGHT SECTION -->
+        <div class="clearfix padding feature-section1">
+          <div class="sectionTitle text-center">
+            <h3>Studying at royal</h3>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3 col-xs-6 text-center">
+              <div class="feature-box v3">
+                <span><i class="fa fa-home" aria-hidden="true"></i></span>
+                <h3>Our Campus</h3>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+              </div>
+            </div>
+
+            <div class="col-sm-3 col-xs-6 text-center">
+              <div class="feature-box v3">
+                <span><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                <h3>Professiors</h3>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+              </div>
+            </div>
+
+            <div class="col-sm-3 col-xs-6 text-center">
+              <div class="feature-box v3">
+                <span><i class="fa fa-group" aria-hidden="true"></i></span>
+                <h3>Students</h3>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+              </div>
+            </div>
+
+            <div class="col-sm-3 col-xs-6 text-center">
+              <div class="feature-box v3">
+                <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                <h3>Vertual Tour</h3>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- DARK SECTION -->
+    <div class="padding clearfix paralax" style="background-image: url('<%= asset_path("paralax01.jpg")%>');">
+      <div class="container">
+        <div class="paralax-text text-center paralaxInner">
+          <h2>Join 2591 Students</h2>
+          <p>Donec congue consequat risus, nec volutpat enim tempus id. Proin et sapien eget diam ullamcorper consectetur. Sed blandit imperdiet mauris. Mauris eleifend faucibus ipsum quis varius. Quisque pharetra leo erat, non eleifend nibh interdum quis.</p>
+          <a href="buying-steps.html" class="btn btn-default commonBtn">Get Admission</a>
+        </div><!-- row -->
+      </div>
+    </div>
+
+    <!--VIDEO SECTION -->
+    <div class="video-section padding">
+      <div class="container">
+        <div class="sectionTitle title-block">
+          <h3>What’s happening in royal university?</h3>
+        </div>
+        <a class="more" href="">View All ></a>
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <div class="videoLeft">
+              <div class="related_post_sec single_post">
+                <span class="rel_thumb">
+                  <a class="popup-youtube" href="https://www.youtube.com/embed/oOMcZoeEK0A?autoplay=1">
+                    <%= image_tag "video_image.jpg"%>
+                </span>
+                <div class="rel_right">
+                  <h4><a href="single-post-right-sidebar.html">Royal College template got updated with new features and improvements</a></h4>
+                  <div class="meta">
+                    <span class="author">Posted by: <a href="#">Admin </a></span>
+                    <span class="date">on: <a href="#">January 24, 2016</a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xs-12">
+            <div class="videoRight">
+              <div class="related_post_sec single_post">
+                <ul>
+                  <li>
+                    <span class="rel_thumb">
+                      <a class="popup-youtube" href="https://www.youtube.com/embed/oOMcZoeEK0A?autoplay=1">
+                        <%= image_tag "video-01.jpg"%>
+                      </a>
+                    </span>
+                    <div class="rel_right">
+                      <h4><a href="single-post-right-sidebar.html">Royal College template got updated with new features and improvements</a></h4>
+                      <div class="meta">
+                        <span class="author">Posted by: <a href="#">Admin </a></span>
+                        <span class="date">on: <a href="#">January 24, 2016</a></span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="rel_thumb">
+                      <a class="popup-youtube" href="https://www.youtube.com/embed/oOMcZoeEK0A?autoplay=1">
+                        <%= image_tag "video-02.jpg"%>
+                      </a>
+                    </span>
+                    <div class="rel_right">
+                      <h4><a href="single-post-right-sidebar.html">Royal College template got updated with new features and improvements</a></h4>
+                      <div class="meta">
+                        <span class="author">Posted by: <a href="#">Admin </a></span>
+                        <span class="date">on: <a href="#">January 24, 2016</a></span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="rel_thumb">
+                      <a class="popup-youtube" href="https://www.youtube.com/embed/oOMcZoeEK0A?autoplay=1">
+                        <%= image_tag "video-03.jpg"%>
+                      </a>
+                    </span>
+                    <div class="rel_right">
+                      <h4><a href="single-post-right-sidebar.html">Royal College template got updated with new features and improvements</a></h4>
+                      <div class="meta">
+                        <span class="author">Posted by: <a href="#">Admin </a></span>
+                        <span class="date">on: <a href="#">January 24, 2016</a></span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DARK SECTION -->
+    <div class="padding clearfix paralax" style="background-image: url('<%= asset_path("paralax02.jpg")%>');">
+      <div class="container">
+        <div class="paralax-text text-center paralaxInner">
+          <h2>Connect with us</h2>
+          <p>Simply Follow, Like or Connect with us</p>
+          <ul class="list-inline">
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+          </ul>
+        </div><!-- row -->
+      </div>
+    </div>
+
+    <!-- GALLERY -->
+    <div class="clearfix padding gallery-section">
+      <div class="container">
+        <div class="sectionTitle title-block">
+          <h3>Some Moments</h3>
+        </div>
+        <a class="more" href="">View All ></a>
+        <div class="photo_gallery custom">
+          <ul class="gallery popup-gallery">
+            <li>
+              <a href="img/campus/5.jpg" title="Photo 1">
+                <%= image_tag "5.jpg"%>
+                <div class="overlay">
+                  <span class="zoom">
+                    <i class="fa fa-search"></i>
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="img/campus/6.jpg" title="Photo 2">
+                <%= image_tag "6.jpg"%>
+                <div class="overlay">
+                  <span class="zoom">
+                    <i class="fa fa-search"></i>
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="img/campus/7.jpg" title="Photo 3">
+                <%= image_tag "7.jpg"%>
+                <div class="overlay">
+                  <span class="zoom">
+                    <i class="fa fa-search"></i>
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="img/campus/8.jpg" title="Photo 4">
+                <%= image_tag "8.jpg"%>
+                <div class="overlay">
+                  <span class="zoom">
+                    <i class="fa fa-search"></i>
+                  </span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- TESRIMONIAL SECTION -->
+    <div class="testimonial-section clearfix">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <div class="testimonial">
+              <div class="carousal_content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+              </div>
+              <div class="carousal_bottom">
+                <div class="thumb">
+                  <%= image_tag "SARA-LISBON_Art-Student.jpg", draggable: "false"%>
+                  <img src="img/about/SARA-LISBON_Art-Student.jpg" alt="" draggable="false">
+                </div>
+                <div class="thumb_title">
+                  <span class="author_name">Sara Lisbon</span>
+                  <span class="author_designation">Student<a href="#"> English Literature</a></span>
+                </div>
+              </div>
+            </div><!-- testimonial -->
+          </div><!-- col-xs-12 -->
+          <div class="col-xs-12 col-sm-6">
+            <div class="features">
+              <h3>Why Choose Us?</h3>
+              <ul>
+                <li><i class="fa fa-check-circle-o"></i>It’s a complete solution for your college website</li>
+                <li><i class="fa fa-check-circle-o"></i>PSD file included to help you customize the design better</li>
+                <li><i class="fa fa-check-circle-o"></i>SASS file included for unlimited hasel free style customization</li>
+                <li><i class="fa fa-check-circle-o"></i>Theme option switcher for live cusomization preview</li>
+                <li><i class="fa fa-check-circle-o"></i>24/7 Support</li>
+              </ul>
+            </div>
+          </div><!-- col-xs-12 -->
+        </div><!-- row -->
+      </div><!-- container -->
+    </div>

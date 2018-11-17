@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
  root 'home#index'
+ get '/home-course' => "home#home_course"
+ get '/home-university' => "home#home_university"
  get '/about-us' => "home#about_us"
  get '/the-founder' => "home#founder"
  get '/the-leadership' => "home#leadership"
@@ -27,4 +29,12 @@ Rails.application.routes.draw do
  get '/project-based-learning-system' => "home#project_based_learning_system"
  get '/institutes' => "home#institutes"
  get '/contact' => "home#contact"
+ get '/courses' => "home#courses"
+ get '/course-single' => "home#course_single"
+ get '/staff' => "home#staff"
+ get '/events' => "home#events"
+ get '/single-event' => "home#single_event"
+ get '/event-calendar' => "home#event_calendar"
+ get '/blog-list' => "home#blog_list"
+ get '/blog-single' => "home#blog_single"
 end

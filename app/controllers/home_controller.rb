@@ -56,4 +56,24 @@ class HomeController < ApplicationController
 
   def contact;end
 
+  def courses;end
+
+  def course_single;end
+
+  def Staff;end
+
+  def Events;end
+
+  def single_event;end
+
+  def event_calendar;end
+
+  def blog_list;end
+
+  def blog_single;end
+
+  def home_course;end
+
+  def home_university;end
+
 end
