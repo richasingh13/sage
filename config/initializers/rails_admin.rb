@@ -1,5 +1,10 @@
 RailsAdmin.config do |config|
 
+   config.model Event do
+    edit do
+     configure :description, :ck_editor
+   end
+  end
   ### Popular gems integration
 
   ## == Devise ==

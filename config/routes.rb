@@ -33,9 +33,11 @@ Rails.application.routes.draw do
  get '/courses' => "home#courses"
  get '/course-single' => "home#course_single"
  get '/staff' => "home#staff"
- get '/events' => "home#events"
  get '/single-event' => "home#single_event"
  get '/event-calendar' => "home#event_calendar"
  get '/blog-list' => "home#blog_list"
  get '/blog-single' => "home#blog_single"
+
+ resources :events
+
 end
