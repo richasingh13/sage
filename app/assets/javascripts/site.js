@@ -17,5 +17,3 @@
 //= require site/custom
 //= require site/optionswitcher
 //= require activestorage
-//= require turbolinks
-

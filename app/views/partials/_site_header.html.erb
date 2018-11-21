@@ -2,17 +2,13 @@
   <div class="topbar clearfix">
     <div class="container">
       <ul class="topbar-left">
-        <li class="phoneNo"><i class="fa fa-phone"></i>0123 45678910</li>
+        <li class="phoneNo"><i class="fa fa-phone"></i>0731 4000100</li>
         <li class="email-id hidden-xs hidden-sm"><i class="fa fa-envelope"></i>
-          <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+          <a href="mailto:info@yourdomain.com">info@sageuni.com</a>
         </li>
       </ul>
       <ul class="topbar-right">
-        <li class="hidden-xs"><a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li class="hidden-xs"><a href="#"><i class="fa fa-facebook"></i></a></li>
-        <li class="hidden-xs"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-        <li class="hidden-xs"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-        <li class="hidden-xs"><a href="#"><i class="fa fa-rss"></i></a></li>
+        <li class="hidden-xs"><a href="#"><i class="fa fa-expand" onclick="openFullscreen();"></i></a></li>
         <li class="top-search list-inline">
           <a href="#"><i class="fa fa-search"></i></a>
           <ul class="dropdown-menu dropdown-menu-right">
@@ -22,20 +18,6 @@
                 <button type="submit" class="btn btn-default commonBtn">Search</button>
               </span>
             </li>
-          </ul>
-        </li>
-        <li class="dropdown language">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-          <i class="fa fa-globe"></i>EN
-          <i class="fa fa-caret-down"></i>
-          </a>
-          <ul class="dropdown-menu">
-            <li class="active">
-                  <a href="#">English </a>
-            </li>
-            <li><a href="#">Spanish</a></li>
-            <li><a href="#">Russian</a></li>
-            <li><a href="#">German</a></li>
           </ul>
         </li>
       </ul>
@@ -126,8 +108,8 @@
                   <li class=" dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
                     <ul class="dropdown-menu">
-                      <li><a href="/blog-list">Blog List</a></li>
-                      <li><a href="/blog-single">Blog Single</a></li>
+                      <li><a href="/articles">Blog List</a></li>
+                      
                     </ul>
                   </li>
                   <li class=" dropdown">
@@ -147,4 +129,18 @@
       </div><!-- /.container -->
     </nav><!-- navbar -->
   </div>
-</header>
+</header>  
+<script type="text/javascript">
+  var elem = document.documentElement;
+  function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.mozRequestFullScreen) { /* Firefox */
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+      elem.msRequestFullscreen();
+    }
+  }
+</script>

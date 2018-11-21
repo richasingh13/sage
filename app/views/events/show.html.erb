@@ -127,7 +127,7 @@
                       <%= image_tag event.cover_image_url, style: "    width: 193px;height: 69px;"%>
                     </span><!--end rel_thumb-->
                     <div class="rel_right">
-                      <a href="single-post-right-sidebar.html"><h4><%= event.title %></h4></a>
+                     <h4><%= link_to event.title, event_path(event) %></h4>
                       <span class="date">Posted: <a href="single-post-right-sidebar.html"><%= event.start_datetime.strftime("%d  %b")%></span>
                     </div><!--end rel right-->
                   </li>

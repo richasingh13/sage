@@ -13,6 +13,7 @@
 //= require popper
 //= require bootstrap
 //= require rails_admin/custom/ckeditor_ajax
+//= require fullscreen
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks

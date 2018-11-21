@@ -1,9 +1,19 @@
 RailsAdmin.config do |config|
 
-   config.model Event do
+  config.model Event do
     edit do
-     configure :description, :ck_editor
-   end
+      configure :description, :ck_editor
+      configure :latitude, :hidden
+      configure :longitude, :hidden
+    end
+  end
+
+
+  config.model Article do
+    edit do
+      configure :description, :ck_editor
+      configure :slug, :hidden
+    end
   end
   ### Popular gems integration
 

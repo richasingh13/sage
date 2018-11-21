@@ -1,0 +1,63 @@
+<div class="post_section clearfix">
+      <div class="container">
+        <div class="row">
+           <div class="col-xs-12 col-sm-8 post_left">
+             <div class="post_left_section post_left_border">
+               <% @articles.each do |article| %>
+              <div class="post">
+                <div class="post_thumb">
+                  <%= image_tag article.cover_image_url , style: "max-width:100%;"%>
+                </div><!--end post thumb-->
+                <div class="meta">
+                  <span class="date">Posted: <%= article.created_at.strftime("%d.%b")%></span>
+                </div><!--end meta-->
+                <h1><%= link_to article.title, article %></h1>
+                <div class="post_desc">
+                  <%= article.description.html_safe%>
+                </div><!--end post desc-->
+              </div><!--end post-->
+             <% end %>
+            </div><!--end post left section-->
+          </div><!--end post_left-->
+
+          <div class="col-xs-12 col-sm-4 post_right">
+            <div class="post_right_inner">
+
+              <div class="related_post_sec">
+                <div class="list_block">
+                  <h3>Latest News</h3>
+                  <ul>
+                    <% @latest_articles.last(5).each do |article| %>
+                      <li>
+                        <span class="rel_thumb">
+                         <%= image_tag article.cover_image_url, style: "width:193px;height: 69px;" %>
+                        </span><!--end rel_thumb-->
+                        <div class="rel_right">
+                          <a href="single-post-right-sidebar.html"><%= link_to article.title, article_path(article) %></a>
+                          <span class="date">Posted: <%= article.created_at.strftime("%d.%b")%></span>
+                        </div><!--end rel right-->
+                      </li>
+                    <% end %>
+                  </ul>
+                </div>
+                  <a href="#" class="more_post">More</a>
+                </div>
+                </div>
+                <div class="list_block">
+                  <div class="newsletter">
+                    <h3>Newsletter</h3>
+                    <form action="#" method="post">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                      </div>
+                      <button type="submit" class="btn btn-default btn-block commonBtn">Subscribe</button>
+                      </form>
+                    </div>
+                </div><!-- formArea -->
+              </div><!--end related_post_sec-->
+            </div><!--end post right inner-->
+          </div><!--end post_right-->
+        </div>
+      </div>
+    </div><!--end post section-->
+

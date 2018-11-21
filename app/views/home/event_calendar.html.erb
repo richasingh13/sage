@@ -10,7 +10,6 @@
     </div>
   </div>
 </div><!--end full banner-->
-
 <div class="calendar_outer">
   <div class="container">
     <div class="row">
@@ -22,3 +21,20 @@
     </div><!--end row-->
   </div><!--end container-->
 </div><!--end calendar outer-->
+
+
+<script type="text/javascript">
+  $(document).ready(function(event,jsEvent,ui,view){
+    $('#calendar').fullCalendar({
+      header:{
+        left:'prev,next',
+        center:'title'
+      },
+      defaultDate:'2018-11-21',
+      editable:true,
+      eventLimit:true,
+      events: '/events/event_calendar.json'
+    });
+    // $('a.fc-event').attr('href','/single-event');
+  });
+</script>
